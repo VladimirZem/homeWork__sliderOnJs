@@ -1,0 +1,155 @@
+/* Сброс дефолтных стилей */
+@import url(reset.css); 
+
+
+
+/* Контейнер */
+.container {
+    width: 100%;
+    max-width: 1171px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* Слайдер */
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.worksSlider {
+    display: flex;
+    width: 4313px;
+    gap: 450px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slider__nav {
+    display: flex;
+    justify-content: end;
+    gap: 60px;
+    padding-top: 107px;
+    position: relative;
+    align-items: center;
+    transition: all ease 1s;
+}
+
+.number__link {
+    color: #FFFFFF ;
+    opacity: .3;
+    text-decoration: none;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    transition: all ease 1s;
+}
+
+.number__link:hover {
+    color: #E3B873 ;
+    opacity: 1;
+    border-bottom: 1px solid #E3B873 ;
+}
+
+.slider__text {
+    width: 442px;
+    height: 340px;
+}
+
+.slider__title {
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    font-size: 27px;
+    margin-bottom: 34px;
+}
+
+.slider__p {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 42px;
+}
+
+.about__number {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.about__text {
+    flex-direction: column;
+    width: 181px;
+    height: 112px;
+}
+
+
+.about__title {
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    font-size: 18px;
+    margin-bottom: 9px;
+    line-height: 1.5 ;
+
+}
+
+.about__p {
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 1.5 ;
+}
+
+.one {
+    width: 110px;
+}
+
+.slider__btn {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.dots__btn{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.dots__btn:hover{
+    width: 12px;
+    height: 12px;
+    transition: all ease .5s;
+}
+
+.arrows__btn {
+    width: 45px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.btn__prev {
+    background: url(../img/svg/arrow_prev.svg) no-repeat;
+}
+
+.btn__next {
+    background: url(../img/svg/arrow__next.svg) no-repeat;
+}
+
+
+.active {
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    transition: all ease .5s;
+}
+.active__nav {
+    color: #E3B873 ;
+    opacity: 1;
+    border-bottom: 1px solid #E3B873 ;
+}
